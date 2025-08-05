@@ -29,6 +29,8 @@ def get_generate_inventory_prompt():
         "         hosts:\n"
         "           rhel9-a3:\n"
         "             ansible_user: iacuser"
+        "- After the YAML is validated successfully with validate_yaml, use that exact version as the final output and DO NOT regenerate or modify it\n"
+        "- Stop the chain once validate_yaml returns 'YAML is valid'"
     )
 
     prompt = ChatPromptTemplate.from_messages([
