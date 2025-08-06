@@ -16,7 +16,7 @@ def get_generate_inventory_prompt():
         "- IMPORTANT: Do **not** wrap your response with triple backticks '```' or quadruple backticks '````'. "
             "Output only raw YAML without any markdown formatting or code fences of any kind.\n"
         "- ALWAYS validate your YAML by calling 'validate_yaml' tool before returning it.\n"
-        "- If you’re unsure about YAML structure or syntax, use validate_yaml to confirm it is correct.\n"
+        "- If you are unsure about YAML structure or syntax, use validate_yaml to confirm it is correct.\n"
         "- Only return YAML that has passed validation."
         "- Input to the tool must be plain YAML as a string."
         "- When calling a tool with YAML input, always format the input using a block scalar (|) for multiline "
